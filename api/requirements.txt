@@ -1,0 +1,5 @@
+fastapi
+fastapi[standard]
+torch
+transformers
+pydantic
