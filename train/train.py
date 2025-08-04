@@ -46,7 +46,14 @@ def main():
         print(f"GPU: {torch.cuda.get_device_name(0)}")
         print(f"GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
     
-    df = load_and_prep(["data/goemotions_1.csv","data/goemotions_2.csv","data/goemotions_3.csv"])
+    df = load_and_prep([
+        "data/english/goemotions_1.csv",
+        "data/english/goemotions_2.csv",
+        "data/english/goemotions_3.csv",
+        "data/spanish/goemotions_spanish_1.csv",
+        "data/spanish/goemotions_spanish_2.csv",
+        "data/spanish/goemotions_spanish_3.csv",
+    ])
     train_df, test_df = train_test_split(df, test_size=0.1, random_state=42)
     train_ds = Dataset.from_pandas(train_df)
     test_ds  = Dataset.from_pandas(test_df)
