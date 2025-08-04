@@ -1,6 +1,5 @@
 torch
 transformers
-python-dotenv
 pandas
 datasets
 scikit-learn
