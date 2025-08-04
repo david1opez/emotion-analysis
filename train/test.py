@@ -18,7 +18,7 @@ class GoEmotionsPredictor:
             import os
             # Use absolute path to the model directory
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            model_path = os.path.join(os.path.dirname(current_dir), "api", "roberta-goemotions")
+            model_path = os.path.join(os.path.dirname(current_dir), "api", "app", "roberta-goemotions-en-es")
         
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         print(f"Loading model from {model_path}")
