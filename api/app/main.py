@@ -25,7 +25,7 @@ class GoEmotionsPredictor:
         """Initialize the emotion predictor with the trained model."""
         if model_path is None:
             # Use absolute path to the model directory
-            model_path = os.path.join(os.path.dirname(__file__), "roberta-goemotions")
+            model_path = os.path.join(os.path.dirname(__file__), "roberta-goemotions-en-es")
         
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         
