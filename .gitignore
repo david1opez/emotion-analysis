@@ -2,3 +2,4 @@
 .venv
 api/app/__pycache__
 api/app/roberta-goemotions
+api/app/roberta-goemotions-en-es
